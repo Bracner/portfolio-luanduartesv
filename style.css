@@ -1,0 +1,515 @@
+body{
+    margin: 0;
+    background: var(--cor-fundo2);
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+  }
+:root{
+    --var-fundo1: #131313;
+    --var-fundo2: #191919;
+    --var-verde: #1ed760;
+}
+@font-face {
+    font-family: conneqt;
+    src: url(fonts/ConneqtRegular.ttf) format('truetype');
+}
+@font-face {
+    font-family: HarmoniaSans;
+    src: url(fonts/HarmoniaSansProCyr-Bold.ttf) format('truetype');
+}
+/** --------------------- LANDPAGE ------------------------- **/
+.landpage{
+    background-color:var(--var-fundo2);
+    width: 100%;
+    height: 100vh;
+}
+.landpage h1{
+    margin: 0 auto;
+    left: 10%;
+    position: relative;
+    top: 30%;
+    color: white;
+    font-family: conneqt;
+}
+.landpage h2{
+    font-size: 6.25em;
+    margin-left: 0px;
+    margin: 0 auto;
+    left: 10%;
+    position: relative;
+    top: 30%;
+    color: white;
+    font-family: conneqt;
+}
+.landpage h1{
+    font-size: 3.12em;
+    
+}
+.landpage p{
+    left: 12%;
+    position: relative;
+    top: 28%;
+    color: var(--var-verde);
+    font-family: Bahnschrift;
+    font-size: 26px;
+    opacity: 0.7;
+
+}
+
+
+/** --------------------- MENU ------------------------- **/
+.menu span{
+    font-family: Bahnschrift;
+    font-size: 20px;
+    color: white;
+    
+    position: relative;
+    top: -165px;
+}
+.menu{
+    background-color: var(--var-verde);
+    height: 100vh;
+    width: 21.9%;
+    margin: 0;
+    position: absolute;
+    right: 10%;
+    opacity: 1;
+    z-index: 10;
+    min-width: 200px;
+}
+.menu ul{
+    padding: 0;
+    position: relative;
+    text-align: center;
+    top: 26%;
+}
+.menu ul li{
+    margin: 30px;
+    list-style: none;
+}
+.menu ul li a{
+    color: white;
+    font-family: Bahnschrift;
+    text-decoration: none;
+    font-size: 2em;
+    transition: 0.5s;
+}
+.menu ul li a:hover{
+    font-size: 25px;
+}
+        /** Menu Responsivo**/
+        .menu-responsive{
+            position: fixed;
+            left: -100%;
+            transition: 0.5s;
+            
+        }
+        .menu-responsive a{
+            cursor: pointer;
+        }
+        /** BOTAO DO Menu Responsivo**/
+
+        .landpage button{
+            border: none;
+            text-decoration: none;
+            background: none;
+            cursor: pointer;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+            right: 10px;
+            top: 10px;
+            display: none;
+        }
+        button i{
+            font-size: 2em;
+            
+        }
+
+@media screen and (max-width: 960px) {
+    .menu{
+        width: 200px;
+    }
+    .menu ul li a{
+        font-size: 1.5em;
+    }
+    .landpage button{
+        display: block;
+    }
+}
+@media screen and (max-width: 568px) {
+    .menu, .icons{
+        display: none;
+    }
+    .landpage h2, .landpage h1{
+        margin: 0 auto;
+        position: relative;
+        left: 20%;
+       }
+    .landpage h2{
+        font-size: 4.5em;
+    }
+    .landpage h1{
+        font-size: 2.5em;
+    }
+    .landpage p{
+        left: 22%;
+        font-size: 1.3em;
+    }
+    .menu-responsive{
+        left: 0%;
+        background-color: var(--var-fundo1);
+        height: 100vh;
+        z-index: 5;
+        position: fixed;
+        width: 100%;
+        
+    }
+    .menu-responsive ul{
+        
+        text-align: center;
+        list-style: none;
+        margin: 30% 0;
+        padding: 0;
+    }
+    .menu-responsive ul li{
+        padding: 5px;
+        margin: 20px 0;
+    }
+    .menu-responsive a{
+        
+        text-decoration: none;
+        color: white;
+        font-family: Bahnschrift;
+        font-size: 2em;
+    }
+    .landpage button{
+        display: block;
+    }
+}
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+    .menu, .icons{
+        display: none;
+    }
+    .landpage h2, .landpage h1{
+     position: relative;
+     left: 25%;
+    }
+    .landpage p{
+        left: 27%;
+    }
+
+    .menu-responsive{
+
+        left: 0%;
+        background-color: var(--var-fundo1);
+        height: 100vh;
+        z-index: 5;
+        position: fixed;
+        width: 100%;
+    }
+    .menu-responsive ul{
+        
+        text-align: center;
+        list-style: none;
+        margin: 30% 0;
+        padding: 0;
+    }
+    .menu-responsive ul li{
+        padding: 5px;
+        margin: 20px 0;
+    }
+    .menu-responsive a{
+        
+        text-decoration: none;
+        color: white;
+        font-family: Bahnschrift;
+        font-size: 2em;
+    }
+    .landpage button{
+        display: block;
+    }
+ }
+
+.open{
+    left: -100%;
+}
+/** --------------------- BOTAO ------------------------- **/
+.bottons{
+    color: var(--var-verde);
+    font-family: Bahnschrift; 
+    display: inline;
+    font-size: 30px;
+    left: 10%;
+    top: 67%;
+    position: absolute;
+}
+.bottons a{
+    color: white;
+    text-decoration: none;
+    border: solid 2px var(--var-verde);
+    border-radius: 8px ;
+    padding: 5px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.bottons a:hover{
+   background-color: var(--var-verde);
+   font-size: 29px;
+}
+ #downloadcv{
+    position: relative;
+    left: 150px;
+    top: -48px;
+}
+@media screen and (max-width: 568px) {
+    .bottons{
+        left: 20%;
+        top: 66%;
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+
+    .bottons{
+        top: 74%;
+        left: 30%;
+
+    }
+
+}
+
+/** ICONES **/
+.icons{
+    position: absolute;
+    top: 40%;    
+}
+.icons i{
+    color: white;
+    flex-wrap: wrap;
+    display: block;
+    padding: 12px;
+    margin-left: 10px;
+    transition: 0.2;     
+}
+.icons i:hover{
+    opacity: 80%;
+    color: var(--var-verde);
+}
+
+
+/** --------------------- SOBRE MIM ------------------------- **/
+.sobre{
+    background-color: var(--var-fundo1);
+    text-align: center;
+    height: 500px;
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+.sobre h2{
+    margin: 20 0;
+    padding: 0;
+    color: white;
+    font-family: HarmoniaSans;
+    font-size: 40px;
+}
+.sobre p{
+    font-family: Calibri;
+    margin: 0 0;
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 20px;
+}
+/** --------------------- PROJETOS ------------------------- **/
+.projetos{
+    background-color: var(--var-fundo2);
+    text-align: center;
+ 
+    margin: 0;
+    width: 100%;
+    float: left;
+
+}
+.projetos h2{
+    margin: 20 0;
+    padding: 0;
+    color: white;
+    font-family: HarmoniaSans;
+    font-size: 40px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--cor-fundo2);
+
+}
+.container a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    margin-top: -100px;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.container .card{
+    overflow-y: hidden;
+    position: relative;
+    width: 320px;
+    height: 440px;
+    border: 1px solid;
+    margin: 30px;
+    cursor: pointer;
+
+}
+.container .card:hover{
+    background-color: #1ed760;
+    
+}
+.container .card .box .content{
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .box .content h2{
+    position: absolute;
+    top: -100px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(58, 58, 58, 0.3);
+    transition: 0.5s;
+    font-family: Bahnschrift;
+
+}
+.container .card .box .content h2:hover{
+    position: absolute;
+    top: -100px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(58, 58, 58, 1);
+}
+.container .card .box .content h3{
+    position: relative;
+    top: 100px;
+    left: 0px;
+    font-family: sans-serif;
+
+}
+.container .card .box .content p{
+    position: relative;
+    top: 90px;
+    font-family: calibri;
+    
+}
+
+.container .card .box .content .iconescard {
+    position: absolute;
+    left: 40%;
+    bottom: 10px;
+    font-size: 25px;
+    
+    color: rgba(255, 255, 255, 0.2);
+}
+.container .card .box .content .iconescard i{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.container .card .box .content .iconescard i:hover{
+    color: rgba(58, 58, 58, 1);
+}
+.container #breve{
+    color: rgb(0, 0, 0, 0.3);
+    font-size: 30px;
+}
+
+/** --------------------- Habilidades ------------------------- **/
+.habilidades{
+    background-color: var(--var-fundo1);
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    float: left;
+    min-height: 500px;
+    
+
+}
+.habilidades h2{
+    margin: 20 0;
+    padding: 0;
+    color: white;
+    font-family: HarmoniaSans;
+    font-size: 40px;
+}
+.habilidades .skills{
+    margin: 0;
+    display: inline-block;
+    align-items: center;
+}
+.habilidades .skills .skill{
+    margin: 40px 15px;
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-color: var(--var-fundo2);
+    border: 1px solid var(--var-fundo2);
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.habilidades .skills .skill:hover{
+    border: 1px solid var(--var-verde);
+  
+}
+
+.habilidades .box h2{
+    font-family: Calibri;
+    margin: 0 0;
+    
+}
+.habilidades .box p{
+    font-family: Calibri;
+    margin: 0 0;
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 20px;
+}
+.habilidades .skills .skill .box h3{
+    font-family: Calibri;
+    color: white;
+    margin: 10px auto;
+    font-size: 30px;
+
+}
+.skills img{
+    width: 100px;
+    height: 100px;
+}
+#html-select:hover #html-info,
+#css-select:hover #css-info,
+#js-select:hover #js-info,
+#php-select:hover #php-info,
+#jq-select:hover #jq-info,
+#rc-select:hover #rc-info{
+    display: block;
+}
+#html-info, #css-info,#js-info,#php-info, #jq-info, #rc-info{
+    display: none;
+}
+ 
