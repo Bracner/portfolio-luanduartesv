@@ -194,11 +194,19 @@ button{
             position: fixed;
             top: 0;
             z-index: 20;
-            right: 10px;
-            top: 10px;
+            padding: 10px;
             width: 50px;
             height: 50px;
             
+        }
+        .botao-menu{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(25, 25, 25, 0.9);
+            z-index: 20;
+            top: 0;
+            position: fixed;
+            border-bottom: 1px solid var(--var-verde);
         }
         button i{
             font-size: 2em;
@@ -430,6 +438,7 @@ button{
     width: 100px;
     height: 100px;
 }
+
 #html-select:hover #html-info,
 #css-select:hover #css-info,
 #js-select:hover #js-info,
