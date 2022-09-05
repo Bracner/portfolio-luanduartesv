@@ -97,10 +97,11 @@ button{
  @media screen and (max-width: 568px) {
           .landpage h1{
             font-size: 2em;
+            left: 0;
           }
           .landpage h2{
             font-size: 5.15em;
-            left: 0;
+            left: -50px;
           }
           .landpage p{
             font-size: 18px;
@@ -112,6 +113,7 @@ button{
           }
         .bottons{
             left: 10px;
+            font-size: 25px;
         }
  }
 
