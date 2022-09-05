@@ -171,6 +171,7 @@ button{
             list-style: none;
             top: 20%;
             position: relative;
+            padding: 0;
         }
         .menu-responsive ul li{
             margin: 20px;
