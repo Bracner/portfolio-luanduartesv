@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+:root{
+    --var-fundo1: #131313;
+    --var-fundo2: #191919;
+    --var-verde: #1ed760;
+}
+@font-face {
+    font-family: conneqt;
+    src: url(fonts/ConneqtRegular.ttf) format('truetype');
+}
+@font-face {
+    font-family: HarmoniaSans;
+    src: url(fonts/HarmoniaSansProCyr-Bold.ttf) format('truetype');
+}
+/**============= LANDPAGE ===================== **/
+.landpage{
+    background-color: var(--var-fundo2);
+    height: 100vh;
+}
+.landpage h1, .landpage h2{
+    font-family: conneqt;
+    margin: 0;
+    color: white;
+}
+.landpage h2{
+    font-size: 6.25rem;
+}
+.landpage h1{
+    font-size: 3.12rem;
+}
+.landpage-texto {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+/**============= LANDPAGE - MENU ===================== **/
+        .landpage .menu{
+            margin: 0;
+            padding: 0;
+            top: 0;
+            right: 10%;
+            width: 21.9%;
+            height: 100vh;
+            position: absolute;
+            background-color: var(--var-verde);
+        }
+        .landpage .menu ul{
+            padding: 0;
+            position: relative;
+            text-align: center;
+            top: 26%;
+        }
+        .landpage .menu ul li{
+            margin: 30px;
+            list-style: none;
+        }
+        .landpage .menu ul li a{
+            color: white;
+            font-family: Bahnschrift;
+            text-decoration: none;
+            font-size: 180%;
+            transition: 0.5s;
+        }
+        .landpage .menu ul li a:hover{
+            font-size: 156.25%;
+        }
+        @media screen and (max-width: 568px) {
+            .landpage .menu{
+                display: none;
+            }
+            .landpage h1{
+                font-size: 4.25rem;
+            }
+        }

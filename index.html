@@ -8,6 +8,8 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='main.js'></script>
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 </head>
 <body>
     <script src="https://kit.fontawesome.com/1cd113c3b4.js" crossorigin="anonymous"></script>
@@ -15,7 +17,7 @@
 
 
         <!-- Pagina Inicial-->
-        <div class="landpage">
+        <div class="landpage" id="landpage">
             <button onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
             <div class="menu"> 
                 <ul>
@@ -36,9 +38,20 @@
 
                 </ul>
             </div>
-            <h2>Olá,</h2>
-            <h1>Me chamo <span style="color: #1ed760;">Luan</span></h1>
-            <p>Desenvolvedor front-end</p>
+            <div class="landpage-texto">
+                <h2>Olá,</h2>
+                <h1>Me chamo <span style="color: #1ed760;">Luan</span></h1>
+                <p>Desenvolvedor front-end</p>
+                <div class="bottons">
+                  
+                        <a href="https://github.com/Bracner" target="_blank">GitHub</a>
+                    
+                        <a href="files/CV_Luan Duarte Silva.pdf" download>Download Cv</a>
+    
+                   
+                </div>
+            </div>
+         
           <!-- Icones-->  
             <div class="icons" >
                 <a href="" style="text-decoration: none;"><i class="fa-brands fa-facebook-f"></i></a>       
@@ -46,15 +59,7 @@
                 <a href="https://www.instagram.com/luanduartesv/" target="_blank" style="text-decoration: none;"><i class="fa-brands fa-instagram"></i></a>
             </div>
 
-            <div class="bottons">
-                <div id="github">
-                    <a href="">GitHub</a>
-                </div>
-                <div id="downloadcv">
-                    <a href="">Download Cv</a>
-
-                </div>
-            </div>
+            
             
         </div>
 

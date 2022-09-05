@@ -2,6 +2,8 @@ body{
     margin: 0;
     background: var(--cor-fundo2);
     overflow-x: hidden;
+    width: 100%;
+    text-align: center;
 }
 html {
     scroll-behavior: smooth;
@@ -19,25 +21,29 @@ html {
     font-family: HarmoniaSans;
     src: url(fonts/HarmoniaSansProCyr-Bold.ttf) format('truetype');
 }
+button{
+    display: none;
+}
 /** --------------------- LANDPAGE ------------------------- **/
 .landpage{
     background-color:var(--var-fundo2);
-    width: 100%;
+    
     height: 100vh;
 }
 .landpage h1{
-    margin: 0 auto;
+    margin: 0;
     left: 10%;
     position: relative;
     top: 30%;
     color: white;
     font-family: conneqt;
+    
 }
 .landpage h2{
     font-size: 6.25em;
     margin-left: 0px;
     margin: 0 auto;
-    left: 10%;
+    left: -65px;
     position: relative;
     top: 30%;
     color: white;
@@ -48,16 +54,66 @@ html {
     
 }
 .landpage p{
-    left: 12%;
+    
     position: relative;
-    top: 28%;
+    
     color: var(--var-verde);
     font-family: Bahnschrift;
     font-size: 26px;
     opacity: 0.7;
-
+    margin: 10px 0;
 }
-
+.landpage-texto{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+            /** --------------------- BOTAO ------------------------- **/
+            
+            .bottons{
+                color: var(--var-verde);
+                font-family: Bahnschrift; 
+                position: relative;
+                font-size: 30px;
+                
+                
+            }
+            .bottons a{
+                color: white;
+                text-decoration: none;
+                border: solid 2px var(--var-verde);
+                border-radius: 8px ;
+                padding: 5px;
+                transition: 0.5s;
+                margin: 0px;
+                
+            }
+            .bottons a:hover{
+            background-color: var(--var-verde);
+            font-size: 29px;
+            }
+        
+            
+ @media screen and (max-width: 568px) {
+          .landpage h1{
+            font-size: 2em;
+          }
+          .landpage h2{
+            font-size: 5.15em;
+            left: 0;
+          }
+          .landpage p{
+            font-size: 18px;
+            text-align: center;
+          }
+          .landpage-texto, .landpage{
+            text-align: center;
+            margin: 0 auto;
+          }
+        .bottons{
+            left: 10px;
+        }
+ }
 
 /** --------------------- MENU ------------------------- **/
 .menu span{
@@ -103,11 +159,30 @@ html {
         .menu-responsive{
             position: fixed;
             left: -100%;
-            transition: 0.5s;
+            transition: 0.2s;
+            height: 100%;
+            width: 100%;
+            z-index: 19;
+            background-color: rgb(19, 19, 19,0.992);
             
+        }
+        .menu-responsive ul{
+            text-align: center;
+            list-style: none;
+            top: 20%;
+            position: relative;
+        }
+        .menu-responsive ul li{
+            margin: 20px;
+            padding: 5px;
         }
         .menu-responsive a{
             cursor: pointer;
+            color: white;
+            text-decoration: none;
+            font-family:Bahnschrift ;
+            font-size: 2rem;
+            
         }
         /** BOTAO DO Menu Responsivo**/
 
@@ -118,168 +193,22 @@ html {
             cursor: pointer;
             position: fixed;
             top: 0;
-            z-index: 10;
+            z-index: 20;
             right: 10px;
             top: 10px;
-            display: none;
+            width: 50px;
+            height: 50px;
+            
         }
         button i{
             font-size: 2em;
             
         }
+        /** Ativação DO Menu Responsivo**/
+        .open{
+            left: 0%;
+        }
 
-@media screen and (max-width: 960px) {
-    .menu{
-        width: 200px;
-    }
-    .menu ul li a{
-        font-size: 1.5em;
-    }
-    .landpage button{
-        display: block;
-    }
-}
-@media screen and (max-width: 568px) {
-    .menu, .icons{
-        display: none;
-    }
-    .landpage h2, .landpage h1{
-        margin: 0 auto;
-        position: relative;
-        left: 20%;
-       }
-    .landpage h2{
-        font-size: 4.5em;
-    }
-    .landpage h1{
-        font-size: 2.5em;
-    }
-    .landpage p{
-        left: 22%;
-        font-size: 1.3em;
-    }
-    .menu-responsive{
-        left: 0%;
-        background-color: var(--var-fundo1);
-        height: 100vh;
-        z-index: 5;
-        position: fixed;
-        width: 100%;
-        
-    }
-    .menu-responsive ul{
-        
-        text-align: center;
-        list-style: none;
-        margin: 30% 0;
-        padding: 0;
-    }
-    .menu-responsive ul li{
-        padding: 5px;
-        margin: 20px 0;
-    }
-    .menu-responsive a{
-        
-        text-decoration: none;
-        color: white;
-        font-family: Bahnschrift;
-        font-size: 2em;
-    }
-    .landpage button{
-        display: block;
-    }
-}
-@media screen and (min-width: 568px) and (max-width: 1024px) {
-    .menu, .icons{
-        display: none;
-    }
-    .landpage h2, .landpage h1{
-     position: relative;
-     left: 25%;
-    }
-    .landpage p{
-        left: 27%;
-    }
-
-    .menu-responsive{
-
-        left: 0%;
-        background-color: var(--var-fundo1);
-        height: 100vh;
-        z-index: 5;
-        position: fixed;
-        width: 100%;
-    }
-    .menu-responsive ul{
-        
-        text-align: center;
-        list-style: none;
-        margin: 30% 0;
-        padding: 0;
-    }
-    .menu-responsive ul li{
-        padding: 5px;
-        margin: 20px 0;
-    }
-    .menu-responsive a{
-        
-        text-decoration: none;
-        color: white;
-        font-family: Bahnschrift;
-        font-size: 2em;
-    }
-    .landpage button{
-        display: block;
-    }
- }
-
-.open{
-    left: -100%;
-}
-/** --------------------- BOTAO ------------------------- **/
-.bottons{
-    color: var(--var-verde);
-    font-family: Bahnschrift; 
-    display: inline;
-    font-size: 30px;
-    left: 10%;
-    top: 67%;
-    position: absolute;
-}
-.bottons a{
-    color: white;
-    text-decoration: none;
-    border: solid 2px var(--var-verde);
-    border-radius: 8px ;
-    padding: 5px;
-    display: inline-block;
-    transition: 0.5s;
-}
-.bottons a:hover{
-   background-color: var(--var-verde);
-   font-size: 29px;
-}
- #downloadcv{
-    position: relative;
-    left: 150px;
-    top: -48px;
-}
-@media screen and (max-width: 568px) {
-    .bottons{
-        left: 20%;
-        top: 66%;
-        font-size: 25px;
-    }
-}
-@media screen and (min-width: 568px) and (max-width: 1024px) {
-
-    .bottons{
-        top: 74%;
-        left: 30%;
-
-    }
-
-}
 
 /** ICONES **/
 .icons{
@@ -513,3 +442,24 @@ html {
     display: none;
 }
  
+
+
+
+
+
+
+
+
+@media screen and (min-width:0px) and (max-width: 1024px) {
+    .menu, .icons{
+        display: none;
+    }
+    button{
+       position: fixed;
+       right: 0;
+       display: block;
+    }
+   html{
+    width: 100%;
+   }
+}
