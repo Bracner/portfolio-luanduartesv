@@ -61,7 +61,8 @@ button{
     font-family: Bahnschrift;
     font-size: 26px;
     opacity: 0.7;
-    margin: 10px 0;
+    margin: 7px 0;
+    margin-bottom: 15px;
 }
 .landpage-texto{
     position: absolute;
@@ -498,6 +499,7 @@ button{
    }
    .habilidades .skills{
     margin-left: 50px;
+    margin-bottom: 10px;
    }
    .projetos h2{
     margin-bottom: 50px;
