@@ -134,7 +134,7 @@ button{
     left: 50px;
 }
 .menu{
-    background-color: rgb(19, 19, 19,0.7);
+    background-color: rgb(19, 19, 19,0.8);
     border-bottom: 1px solid var(--var-verde);
     height: 70px;
     width: 100%;
