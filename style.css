@@ -13,6 +13,14 @@ html {
     --var-fundo2: #191919;
     --var-verde: #1ed760;
 }
+::-webkit-scrollbar{
+    background-color: var(--var-fundo1);
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--var-verde);
+    
+}
 @font-face {
     font-family: conneqt;
     src: url(fonts/ConneqtRegular.ttf) format('truetype');
@@ -26,8 +34,7 @@ button{
 }
 /** --------------------- LANDPAGE ------------------------- **/
 .landpage{
-    background-color:var(--var-fundo2);
-    
+    background: linear-gradient(45deg,#1f1f1f, #0c0c0c);
     height: 100vh;
 }
 .landpage h1{
@@ -123,17 +130,17 @@ button{
     font-family: Bahnschrift;
     font-size: 20px;
     color: white;
-    
-    position: relative;
-    top: -165px;
+    position: absolute;
+    left: 50px;
 }
 .menu{
-    background-color: var(--var-verde);
-    height: 100vh;
-    width: 21.9%;
+    background-color: rgb(19, 19, 19,0.7);
+    border-bottom: 1px solid var(--var-verde);
+    height: 70px;
+    width: 100%;
     margin: 0;
-    position: absolute;
-    right: 10%;
+    position: fixed;
+
     opacity: 1;
     z-index: 10;
     min-width: 200px;
@@ -141,23 +148,25 @@ button{
 .menu ul{
     padding: 0;
     position: relative;
-    text-align: center;
-    top: 26%;
+    text-align: right;
+    top: 10px;
+
 }
 .menu ul li{
-    margin: 30px;
+    margin-right: 50px;
     list-style: none;
+    display: inline;
 }
 .menu ul li a{
     color: white;
     font-family: Bahnschrift;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.3em;
     transition: 0.5s;
 }
 .menu ul li a:hover{
     position: relative;
-    margin-left: 30px;
+    opacity: 0.5;
 }
         /** Menu Responsivo**/
         .menu-responsive{
