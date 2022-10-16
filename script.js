@@ -7,3 +7,10 @@ function menuShow() {
         menuMobile.classList.add('open');
     }
 }
+
+window.sr = ScrollReveal({reset: true});
+
+sr.reveal ('.main, .projetos h2', {duration: 2000});
+sr.reveal ('.skills, .habilidades h2', {duration: 2000});
+sr.reveal ('.sobre h2,p', {duration: 2000});
+

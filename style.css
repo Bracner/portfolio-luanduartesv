@@ -546,3 +546,9 @@ button{
     margin:  -30px 10px;
    }
 }
+
+
+
+.projetos h2, .main, .habilidades h2, .skills, .sobre h2,.sobre p{
+    visibility: hidden;
+}
