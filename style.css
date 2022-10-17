@@ -166,7 +166,8 @@ button{
 }
 .menu ul li a:hover{
     position: relative;
-    opacity: 0.5;
+    
+    color: #1ed760;
 }
         /** Menu Responsivo**/
         .menu-responsive{
