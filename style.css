@@ -549,7 +549,6 @@ button{
 }
 
 
-
-.projetos h2, .main, .habilidades h2, .skills, .sobre h2,.sobre p{
+.landpage h2,.landpage h1,.bottons, .projetos h2, .main, .habilidades h2, .skills, .sobre h2,.sobre p{
     visibility: hidden;
 }
